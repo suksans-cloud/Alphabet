@@ -4,16 +4,16 @@
    between the shell and that module feels like one continuous product. */
 
 :root{
-  --bg:#F4F2F8;
-  --bg-deep:#F4F2F8;
-  --surface:#FFFFFF;
+  --bg:#E7ECEF;
+  --bg-deep:#E7ECEF;
+  --surface:#EEF1F3;
   --ink:#2E3A42;
   --ink-soft:#5C6B74;
   --ink-faint:#8B9AA3;
   --primary:#6B4FA0;
   --primary-light:#8567B8;
   --primary-soft:#ECE5F7;
-  --line:#E7E1F0;
+  --line:transparent;
   --gold:#C89B3C;
   --income:#1F9D6C;
   --income-soft:#DCEFE4;
@@ -21,9 +21,9 @@
   --expense-soft:#F3DFDA;
   --invest:#8B6BC9;
   --invest-soft:#E5DFF3;
-  --shadow-card: 0 2px 10px rgba(46,58,66,.07);
-  --shadow-hero: 0 4px 18px rgba(46,58,66,.08);
-  --shadow-inset: none;
+  --shadow-card: 7px 7px 16px -4px #c3cbd0, -7px -7px 16px -4px #ffffff;
+  --shadow-hero: 10px 10px 22px -6px #c3cbd0, -10px -10px 22px -6px #ffffff;
+  --shadow-inset: inset 3px 3px 7px #c3cbd0, inset -3px -3px 7px #ffffff;
   --radius-l:26px;
   --radius-m:18px;
   --safe-t: env(safe-area-inset-top, 0px);
@@ -496,25 +496,25 @@ body{background:var(--bg)}
 .mff-shelf-pick-btn svg{width:16px;height:16px;color:var(--primary);flex:none}
 
 /* =====================================================================
-   Flat finishing touches — plain white surfaces with a light border,
-   no embossed/shiny shadow effect. Inputs use a normal border instead
-   of a recessed inset shadow.
+   Neumorphism finishing touches — form fields sit "recessed" into the
+   surface (inset soft-shadow) instead of using a border; secondary
+   ("ghost") buttons get the same pressed-in feel so only the primary
+   colored CTA visually "pops" off the page.
    ===================================================================== */
 .mff-app input,.mff-app select,.mff-app textarea{
-  background:var(--surface);
-  border:1px solid var(--line) !important;
-  box-shadow:none;
+  box-shadow:var(--shadow-inset);
+  border:0 !important;
 }
 .mff-app input:focus,.mff-app select:focus,.mff-app textarea:focus{
-  outline:none;border-color:var(--primary-light) !important;box-shadow:0 0 0 2px var(--primary-soft);
+  outline:none;box-shadow:var(--shadow-inset), 0 0 0 2px var(--primary-light);
 }
 .mff-btn-ghost{
-  background:var(--surface);border:1px solid var(--line);color:var(--primary);box-shadow:none;
+  background:var(--bg);box-shadow:var(--shadow-inset);color:var(--primary);
 }
 .mff-sync-bar-btn,.mff-sync-dir-btn,.mff-search-box,.mff-month-nav button,.mff-sheet-close,.mff-search-input{
-  border:1px solid var(--line) !important;box-shadow:none;background:var(--surface);
+  border:0 !important;box-shadow:var(--shadow-inset);
 }
 .mff-card,.mff-person-card,.mff-file-row,.mff-shelf,.mff-idcard,.mff-chart-card,.mff-sum-card,
 .mff-money-section,.mff-sheet,.mff-money-tab,.mff-settings-card,.mff-sync-bar,.mff-banner{
-  box-shadow:var(--shadow-card) !important;border:1px solid var(--line);
+  box-shadow:var(--shadow-card) !important;
 }
