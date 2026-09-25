@@ -4,8 +4,8 @@
    between the shell and that module feels like one continuous product. */
 
 :root{
-  --bg:#EAF4EE;
-  --bg-deep:#EAF4EE;
+  --bg:#F4F2F8;
+  --bg-deep:#F4F2F8;
   --surface:#FFFFFF;
   --ink:#2E3A42;
   --ink-soft:#5C6B74;
@@ -59,7 +59,7 @@ body{background:var(--bg)}
 .mff-hero-wrap{
   position:relative;
   overflow:hidden;
-  background:linear-gradient(160deg, var(--primary-light) 0%, var(--primary) 55%, #56408A 100%);
+  background:var(--bg);
   box-shadow:var(--shadow-hero);
   border-radius:0 0 32px 32px;
   padding-bottom:44px; /* room for the grid to overlap into */
@@ -70,22 +70,22 @@ body{background:var(--bg)}
 .mff-topbar{
   display:flex;align-items:center;justify-content:space-between;
   padding:calc(18px + var(--safe-t)) 20px 6px;
-  color:#fff;
+  color:var(--ink);
   position:relative;
 }
 .mff-topbar .back{
   display:inline-flex;align-items:center;gap:6px;
-  color:#fff;text-decoration:none;font-size:15px;font-weight:600;
-  opacity:.92;
+  color:var(--ink);text-decoration:none;font-size:15px;font-weight:600;
+  opacity:.85;
 }
 .mff-topbar .back svg{width:20px;height:20px}
-.mff-topbar .dots{display:flex;gap:14px;opacity:.85;color:#fff}
+.mff-topbar .dots{display:flex;gap:14px;opacity:.7;color:var(--ink)}
 
 /* ---------- greeting header (home) ---------- */
-.mff-hero{padding:6px 22px 6px;color:#fff;position:relative}
-.mff-hero .eyebrow{font-size:13px;color:rgba(255,255,255,.8);font-weight:700;margin:0 0 4px}
-.mff-hero h1{font-size:26px;line-height:1.25;margin:0;font-weight:700;color:#fff}
-.mff-hero h1 b{color:#fff}
+.mff-hero{padding:6px 22px 6px;color:var(--ink);position:relative}
+.mff-hero .eyebrow{font-size:13px;color:var(--primary);font-weight:700;margin:0 0 4px}
+.mff-hero h1{font-size:26px;line-height:1.25;margin:0;font-weight:700;color:var(--ink)}
+.mff-hero h1 b{color:var(--primary)}
 
 /* ---------- module grid ---------- */
 .mff-grid{
