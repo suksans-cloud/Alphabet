@@ -10,18 +10,18 @@
   --ink:#2E3A42;
   --ink-soft:#5C6B74;
   --ink-faint:#8B9AA3;
-  --primary:#072340;
-  --primary-light:#3A6C93;
-  --primary-soft:#E3EBF1;
+  --primary:#00C2A8;
+  --primary-light:#00967F;
+  --primary-soft:#DFF7F1;
   --line:#E1E6EA;
-  --gold:#C89B3C;
-  --gold-text:#8C6A20;
+  --gold:#F0C33C;
+  --gold-text:#A87B0C;
   --income:#1F9D6C;
   --income-soft:#DCEFE4;
   --expense:#E0654B;
   --expense-soft:#F3DFDA;
-  --invest:#8B6BC9;
-  --invest-soft:#E5DFF3;
+  --invest:#6C63FF;
+  --invest-soft:#ECEBFF;
   --shadow-card: 0 2px 10px rgba(46,58,66,.07);
   --shadow-hero: 0 4px 18px rgba(46,58,66,.08);
   --shadow-inset: none;
@@ -112,9 +112,8 @@ body{background:var(--bg)}
   transition:transform .15s ease, box-shadow .15s ease;
 }
 .mff-card:active{transform:scale(.97)}
-.mff-card.featured{border:1.5px solid var(--gold)}
 .mff-card .ribbon{
-  position:absolute;top:10px;right:10px;background:var(--gold);color:#3D2E0A;
+  position:absolute;top:10px;right:10px;background:var(--gold);color:#4A3600;
   font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:999px;
 }
 .mff-card .icon-wrap{
@@ -147,7 +146,7 @@ body{background:var(--bg)}
   text-decoration:none;position:relative;
 }
 .mff-navbtn svg{width:22px;height:22px}
-.mff-navbtn.active{color:var(--gold-text)}
+.mff-navbtn.active{color:var(--primary)}
 .mff-navbtn .mff-badge-dot{
   position:absolute;top:0;right:10px;min-width:15px;height:15px;padding:0 3px;border-radius:999px;
   background:var(--expense);color:#fff;font-size:9px;font-weight:800;line-height:15px;text-align:center;
@@ -207,7 +206,7 @@ body{background:var(--bg)}
 
 /* connect banner (Google Sheets not linked yet) */
 .mff-banner{
-  margin:14px 20px 0;background:#FFF6E9;border:1px solid #F1D9A8;color:#6B4E17;
+  margin:14px 20px 0;background:#FFF6E9;border:1px solid #F1D9A8;color:#A87B0C;
   border-radius:14px;padding:12px 14px;font-size:12.5px;line-height:1.6;
   display:flex;align-items:center;justify-content:space-between;gap:10px;
 }
